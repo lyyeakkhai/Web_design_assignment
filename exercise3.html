@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Schedule spport program</title>
+		<style>
+			.table {
+				margin: 0 auto;
+				border-collapse: collapse;
+                height: 100px;
+			}
+            .group{
+                background-color: aquamarine;
+            }
+            
+			th,
+			td {
+				border: 1px solid black;
+				text-align: center;
+				padding: 10px;
+                font-size: 12px;
+                width: 150px;   /* width of the cell */
+                height: 30px;   /* height of the cell */
+                vertical-align: middle; /* center text vertically */
+			}
+            .days, th{
+                background-color: rgb(0, 183, 255);
+                height: 15px;        /* smaller height */
+                padding: 5px;        /* reduce inner spacing */
+                text-align: center;
+                vertical-align: middle;
+            }
+
+
+			.holiday {
+				color: red;
+                font-weight: bold;
+			}
+            .room td {
+                font-weight: bold;
+                height: 15px;        /* smaller height */
+                padding: 5px;        /* reduce inner spacing */
+                text-align: center;
+                vertical-align: middle;
+            }
+
+		</style>
+	</head>
+	<body>
+		<table class="table">
+			<tr>
+				<th class = "group"colspan="6">Group 8</th>
+			</tr>
+			<tr class="days">
+				<th>Time</th>
+				<th>Monday</th>
+				<th>Tuesday</th>
+				<th>Wednesday</th>
+				<th>Thursday</th>
+				<th>Friday</th>
+			</tr>
+			<tr class = "subject">
+				<td rowspan="2"><br>9:00-12:00<br><br></be>(3 hours)</td>
+				<td>Javascript</td>
+				<td>Web Design</td>
+				<td>Database Design</td>
+				<td>Algorithm C++</td>
+				<td class="holiday" rowspan="2">Holiday</td>
+			</tr>
+			<tr class="room" >
+				<td colspan="4" >Room: A201</td>
+			</tr>
+		</table>
+	</body>
+</html>
